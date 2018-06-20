@@ -1,0 +1,9 @@
+# submit my py
+scp -i ~/.ssh/foundations_key ~/Downloads/09-homework-part1.py root@MY_IP:
+
+# connect to server
+ssh -i ~/.ssh/foundations_key root@MY_IP
+
+# send me email every 6 hours
+crontab -e
+0 8 * * * python3 09-homework-part1.py
